@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_back"
+    tools:context=".ui.AuthFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layBack"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/grey_et_back"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/back"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:id="@+id/topBoard"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black_transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layBack" />
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hoz_mag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBoard"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/entry"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/im"/>
+
+    <View
+        android:id="@+id/entryBoard"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:background="@color/black_transparent"
+        app:layout_constraintStart_toEndOf="@id/tvEntry"
+        app:layout_constraintEnd_toStartOf="@id/tvReg"
+        app:layout_constraintTop_toTopOf="@id/tvEntry" />
+
+    <TextView
+        android:id="@+id/tvReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg"
+        android:textSize="16sp"
+        android:textColor="@color/black_transparent"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        app:layout_constraintStart_toEndOf="@id/tvEntry"
+        app:layout_constraintTop_toBottomOf="@id/im"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvReg"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="12sp"
+            android:textColor="@color/black_transparent"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_login"
+                android:textSize="14sp"
+                android:textColorHint="@color/black_transparent"
+                android:textColor="@color/black"                android:background="@drawable/rounded_et"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLogin"/>
+
+            <TextView
+                android:id="@+id/tvSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="12sp"
+                android:textColor="@color/black_transparent"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etFullName"/>
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/et_password"
+                android:textSize="14sp"
+                android:textColorHint="@color/black_transparent"
+                android:textColor="@color/black"                android:background="@drawable/rounded_et"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSex"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remind_password"
+                android:textSize="12sp"
+                android:textColor="@color/black_transparent"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/etPass"
+                app:layout_constraintEnd_toEndOf="@id/etPass"
+                app:layout_constraintTop_toTopOf="@id/etPass"/>
+
+            <Button
+                android:id="@+id/btnEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/toComeIn"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etPass" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

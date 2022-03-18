@@ -1,0 +1,36 @@
+<resources>
+
+    <string name="app_name">Test Homag</string>
+    <string name="back">Назад</string>
+    <string name="mark_title">Заказывайте запасные части не отходя от станка</string>
+    <string name="reg_title">Если вы зарегистрированы на HOMAG RUSLAND,\nиспользуйте ваш логин и пароль для входа</string>
+    <string name="or">или</string>
+    <string name="reg">Регистрация</string>
+    <string name="entry">Вход</string>
+    <string name="toComeIn">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="remind_password">Напомнить пароль</string>
+    <string name="login">Логин</string>
+    <string name="et_login">\tЛогин</string>
+    <string name="et_password">\tПароль</string>
+    <string name="toReg">Зарегистрироваться</string>
+    <string name="full_name">Ф.И.О.</string>
+    <string name="et_full_name">\tФамилия Имя Отчество</string>
+    <string name="sex">Пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="birthday">Дата рождения</string>
+    <string name="et_birthday">\tдд.мм.гггг</string>
+    <string name="phone">Телефон</string>
+    <string name="et_phone">\t+7 900 000 00 00</string>
+    <string name="email">Электронная почта</string>
+    <string name="et_email">\tЭлектронная почта</string>
+    <string name="company">Наименование компании</string>
+    <string name="et_company">\tВаша компания</string>
+    <string name="service">Сервисный номер</string>
+    <string name="service_number">\t1234567890</string>
+    <string name="password2">Подтвердите пароль</string>
+    <string name="agreement">Подтверждаю корректность введенных данных и даю согласие на обработку моих персональных данных</string>
+
+
+</resources>
