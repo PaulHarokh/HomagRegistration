@@ -1,5 +1,7 @@
 # TestHomag
 
+USED: coroutines, retrofit2, navcomponent, editText mask library
+
 start fragment
 
 <img alt="Icon" src="/ReadMe images/startFr.png" />
