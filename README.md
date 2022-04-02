@@ -1,4 +1,4 @@
-# TestHomag
+# Homag Registration
 
 USED: coroutines, retrofit2, navcomponent, editText mask library
 
